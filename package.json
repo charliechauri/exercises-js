@@ -1,0 +1,22 @@
+{
+  "name": "problems-js",
+  "version": "1.0.0",
+  "description": "Common problems solved using JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charliechauri/problems-js.git"
+  },
+  "author": {
+    "name": "Carlos Echauri",
+    "email": "carlos.echauri@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charliechauri/problems-js/issues"
+  },
+  "homepage": "https://github.com/charliechauri/problems-js#readme"
+}
