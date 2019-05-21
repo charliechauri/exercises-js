@@ -1,1 +1,1 @@
-# problems-js
+# exercises-js
