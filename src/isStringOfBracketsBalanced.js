@@ -20,21 +20,16 @@ const isStringOfBracketsBalanced = (input) => {
       openBracketsStack.push(currentBracket);
     } else {
       const currentClosingIndex = allowedCloseBrackets.indexOf(currentBracket);
+      const lastOpenBracketInStackOnAllowedOpenBracketsIndex = allowedOpenBrackets
+        .indexOf(openBracketsStack.pop());
 
-      if (currentClosingIndex === -1) {
+      if (
+        currentClosingIndex === -1
+        || currentClosingIndex !== lastOpenBracketInStackOnAllowedOpenBracketsIndex
+      ) {
         isBalanced = false;
         break;
       }
-
-      const lastBracketInStack = openBracketsStack[openBracketsStack.length - 1];
-      const lastOpenBracketInStackOnAllowedOpenBracketsIndex = allowedOpenBrackets.indexOf(lastBracketInStack); // eslint-disable-line
-
-      if (currentClosingIndex !== lastOpenBracketInStackOnAllowedOpenBracketsIndex) {
-        isBalanced = false;
-        break;
-      }
-
-      openBracketsStack.pop();
     }
   }
 
