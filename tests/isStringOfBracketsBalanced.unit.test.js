@@ -8,7 +8,6 @@ describe(`${isStringOfBracketsBalanced.name}()`, () => {
     expect(firstResult).toBe(firstExpectedResult);
   });
 
-
   const secondCaseInput = '{{([])}}}{()}';
   const secondExpectedResult = false;
   const secondResult = isStringOfBracketsBalanced(secondCaseInput);
