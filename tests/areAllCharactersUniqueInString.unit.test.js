@@ -1,18 +1,20 @@
 const areAllCharactersUniqueInString = require('../src/areAllCharactersUniqueInString');
 
-const testInput = 'Carlos';
-const expectedResult = true;
+describe(`${areAllCharactersUniqueInString.name}()`, () => {
+  const testInput = 'Carlos';
+  const expectedResult = true;
 
-test(`All characters in "${testInput}" are unique`, () => {
-  const result = areAllCharactersUniqueInString(testInput);
+  test(`Given "${testInput}", all characters must be unique`, () => {
+    const result = areAllCharactersUniqueInString(testInput);
 
-  expect(result).toBe(expectedResult);
-});
+    expect(result).toBe(expectedResult);
+  });
 
-const testInput2 = 'Maria';
-const expectedResult2 = false;
-test(`There are repeated characters in "${testInput2}"`, () => {
-  const result = areAllCharactersUniqueInString(testInput2);
+  const testInput2 = 'Maria';
+  const expectedResult2 = false;
+  test(`Given "${testInput2}", there must be duplicates`, () => {
+    const result = areAllCharactersUniqueInString(testInput2);
 
-  expect(result).toBe(expectedResult2);
+    expect(result).toBe(expectedResult2);
+  });
 });
