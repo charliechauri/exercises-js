@@ -17,4 +17,12 @@ describe(`${areAllCharactersUniqueInString.name}()`, () => {
 
     expect(result).toBe(expectedResult2);
   });
+
+  const testInput3 = 'Hi11';
+  const expectedResult3 = false;
+  test(`Given "${testInput3}", there must be duplicates`, () => {
+    const result = areAllCharactersUniqueInString(testInput3);
+
+    expect(result).toBe(expectedResult3);
+  });
 });
