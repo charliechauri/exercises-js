@@ -2,13 +2,12 @@ const allowedOpenBrackets = ['{', '[', '('];
 const allowedCloseBrackets = ['}', ']', ')'];
 
 /**
- * @name isStringOfBracketsBalanced
- * @description Given a string input of brackets, it should say return if it's balanced
- * and makes sense
+ * Given a string of brackets, it should determine if it's balanced
+ * and has matching pair of brackets
  * @param {string} input
  * @return {boolean}
  */
-const isStringOfBracketsBalanced = (input) => {
+const isBracketsStringBalanced = (input) => {
   let isBalanced = true;
   const inputBrackets = input.split('');
   const openBracketsStack = [];
@@ -36,4 +35,4 @@ const isStringOfBracketsBalanced = (input) => {
   return isBalanced;
 };
 
-module.exports = isStringOfBracketsBalanced;
+module.exports = { isBracketsStringBalanced };
