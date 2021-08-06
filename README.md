@@ -19,3 +19,7 @@ npm install
 ```bash
 npm test
 ```
+
+## Repo visualizer
+
+![Visualization of this repo](./diagram.svg)
